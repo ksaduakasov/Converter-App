@@ -51,18 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void tempListener(){
 
-    }
-
-
-    private void timeListener(){
-
-    }
-
-    private void currencyListener(){
-
-    }
 
 
 

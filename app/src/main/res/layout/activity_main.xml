@@ -9,52 +9,127 @@
 
     <Button
         android:id="@+id/tempButton"
-        android:layout_width="197dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="150dp"
-        android:text="Temperature Converter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="111dp"
+        android:backgroundTint="#1c2"
+        android:text="Tap to Convert"
+        app:layout_constraintBottom_toTopOf="@+id/header_title2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currencyButton" />
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/timeButton"
-        android:layout_width="196dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="30dp"
-        android:text="Time"
-        app:layout_constraintBottom_toTopOf="@+id/currencyButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#1c2"
+        android:text="Tap tp See"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/header_title" />
 
     <TextView
         android:id="@+id/header_title"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="62dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="44dp"
         android:fontFamily="sans-serif"
         android:padding="10dp"
-        android:text="Converter App"
-        android:textSize="80sp"
-        app:layout_constraintBottom_toTopOf="@+id/timeButton"
+        android:text="Choose your desired functionality"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title3" />
+
+    <TextView
+        android:id="@+id/header_title3"
+        android:layout_width="385dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Welcome To My App!"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toTopOf="@+id/header_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/currencyButton"
-        android:layout_width="197dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="38dp"
-        android:text="Currency Converter"
-        app:layout_constraintBottom_toTopOf="@+id/tempButton"
+    <TextView
+        android:id="@+id/header_title2"
+        android:layout_width="217dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="The last APJ assignment, 2021"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempButton" />
+
+    <Button
+        android:id="@+id/currencyButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="106dp"
+        android:backgroundTint="#1c2"
+        android:text="Tap to Convert"
+        app:layout_constraintBottom_toTopOf="@+id/tempButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/timeButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="80dp"
+        android:text="Show time in Cairo and Fiiji"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/timeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="70dp"
+        android:text="Currency: Tenge, Dollar and Euro among each other"
+        app:layout_constraintBottom_toTopOf="@+id/tempButton"
+        app:layout_constraintEnd_toStartOf="@+id/currencyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="68dp"
+        android:text="Temperature: Celcius and Farenheit amoung each other"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tempButton"
+        app:layout_constraintEnd_toStartOf="@+id/tempButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

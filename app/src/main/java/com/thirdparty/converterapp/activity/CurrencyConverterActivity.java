@@ -45,11 +45,11 @@ public class CurrencyConverterActivity extends AppCompatActivity {
                         Double result = converter(money, currency, wantedCurrency);
                         resultText.setText(result.toString());
                     }catch(NumberFormatException e){
-                        Toast.makeText(CurrencyConverterActivity.this, "Check your 'amount' field, please!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CurrencyConverterActivity.this, "Something wrong has happened!", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
-                    Toast.makeText(CurrencyConverterActivity.this, "Supported currencies: KZT, USD, EUR", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CurrencyConverterActivity.this, "This app only works with KZT, USD and EUR", Toast.LENGTH_SHORT).show();
                 }
 
             }

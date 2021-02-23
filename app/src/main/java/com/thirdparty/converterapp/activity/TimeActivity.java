@@ -13,18 +13,19 @@ import com.thirdparty.converterapp.R;
 
 
 public class TimeActivity extends AppCompatActivity {
-private TextClock astanaClock;
-private TextClock laClock;
+private TextClock cairoClock;
+private TextClock fiijiClock;
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time);
-        laClock = (TextClock)findViewById(R.id.laTextClock);
-        astanaClock = (TextClock)findViewById(R.id.astanaTextClock);
-        laClock.setTimeZone("America/Los_Angeles");
-        laClock.setFormat12Hour("hh:mm:ss a");
-        astanaClock.setFormat12Hour("hh:mm:ss a");
+        fiijiClock = (TextClock)findViewById(R.id.fiijiClock);
+        cairoClock = (TextClock)findViewById(R.id.cairoClock);
+        cairoClock.setTimeZone("Africa/Cairo");
+        fiijiClock.setTimeZone("Pacific/Fiji");
+        fiijiClock.setFormat12Hour("hh:mm:ss a");
+        cairoClock.setFormat12Hour("hh:mm:ss a");
     }
 
 

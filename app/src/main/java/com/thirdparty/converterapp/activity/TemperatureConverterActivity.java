@@ -47,11 +47,11 @@ public class TemperatureConverterActivity extends AppCompatActivity {
                         Double result = converter(userTemp, temp, wantedTemp);
                         resultText.setText(result.toString());
                     }catch(NumberFormatException e){
-                        Toast.makeText(TemperatureConverterActivity.this, "Check your 'temperature' field, please!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TemperatureConverterActivity.this, "Something wrong has happened!", Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
-                    Toast.makeText(TemperatureConverterActivity.this, "Supported temperatures: C, F", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TemperatureConverterActivity.this, "This app only works with C and F", Toast.LENGTH_SHORT).show();
                 }
 
             }
